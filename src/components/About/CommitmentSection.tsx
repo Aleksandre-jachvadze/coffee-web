@@ -50,7 +50,7 @@ export default function CommitmentSection() {
           benchmarks. We also offer training, support farm community
           initiatives, and invest in coffee plant science. Curating only the
           finest blends, we roast each lot to highlight tasting profiles
-          distinctive to their native growing region
+          distinctive to their growing region
         </p>
       </div>
     </section>
