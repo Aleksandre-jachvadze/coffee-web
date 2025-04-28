@@ -36,7 +36,6 @@ const LOCATIONS = [
     iconHeight: 44,
   },
 ];
-
 function LocationCard({
   icon,
   name,

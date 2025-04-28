@@ -49,7 +49,7 @@ export default function CommitmentSection() {
           global community of farmers through with well above fair-trade
           benchmarks. We also offer training, support farm community
           initiatives, and invest in coffee plant science. Curating only the
-          finest blends, we roast each lot to highlight tasting profiles
+          finest blends, we rost each lot to highlight tasting profiles
           distinctive to their growing region
         </p>
       </div>

@@ -46,7 +46,7 @@ export default function QualitySection() {
         </h2>
         <p className="mt-6 xl:mt-8 text-responsive opacity-80 px-6 xl:px-[85px] max-w-[500px] md:max-w-[600px]">
           Although we work with growers who pay close attention to all stages of
-          harvest and processing, we employ, on our end, a rigorous quality
+          harvet and processing, we employ, on our end, a rigorous quality
           control program to avoid over-roasting or baking the coffee dry. Every
           bag of coffee is tagged with a roast date and batch number. Our goal
           is to roast consistent, user-friendly coffee, so that brewing is easy
