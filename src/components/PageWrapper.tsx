@@ -2,12 +2,13 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+import type { FC, ReactNode } from "react";
 
-export default function PageWrapper({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+interface PageWrapperProps {
+  children: ReactNode;
+}
+
+const PageWrapper: FC<PageWrapperProps> = ({ children }) => {
   const pathname = usePathname();
 
   return (
@@ -16,10 +17,13 @@ export default function PageWrapper({
         key={pathname}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         {children}
       </motion.div>
     </AnimatePresence>
   );
-}
+};
+
+export default PageWrapper;
