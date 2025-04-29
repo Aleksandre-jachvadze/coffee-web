@@ -1,5 +1,6 @@
 import { Button } from "../Button";
 
+// Steps array containing data for each step
 const steps = [
   {
     number: "01",
@@ -21,14 +22,20 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section className="w-full max-w-[1280px] mx-auto px-6 md:px-[39px] xl:px-0">
+      {/* Main wrapper container */}
       <div className="w-full max-w-[1105px] mx-auto flex flex-col items-center md:items-start text-center md:text-left py-[120px] md:py-[144px] xl:py-[200px]">
+        
+        {/* Section heading */}
         <h2 className="text-grey text-[24px] font-heading xl:pb-[30px]">
           How it works
         </h2>
 
+        {/* Decorative line and dots (visible on tablet and larger screens) */}
         <div className="hidden md:flex items-center relative my-10 w-full max-w-[689px] xl:max-w-[1200px]">
-          <div className="absolute top-1/2 left-0 w-[466px] xl:w-[760px]  h-[2px] bg-pale-orange" />
-
+          {/* Horizontal line */}
+          <div className="absolute top-1/2 left-0 w-[466px] xl:w-[760px] h-[2px] bg-pale-orange" />
+          
+          {/* Dots on the line */}
           <div className="relative w-full flex justify-start gap-[202px] xl:gap-[349px]">
             {[...Array(3)].map((_, index) => (
               <div
@@ -39,18 +46,21 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        {/* Steps (Tablet: Horizontal Row) */}
+        {/* Step cards - arranged horizontally on tablet and desktop */}
         <div className="flex flex-col md:flex-row md:justify-between w-full max-w-[689px] gap-[56px] md:gap-[10px] xl:gap-[155px] pt-[64px] md:pt-[0px] mb-10 md:mb-[40px] xl:mb-[56px]">
           {steps.map((step, index) => (
             <StepCard key={index} {...step} />
           ))}
         </div>
+
+        {/* Call-to-action button */}
         <Button href="/subscribe">Create your plan</Button>
       </div>
     </section>
   );
 }
 
+// StepCard component to render individual step
 const StepCard = ({
   number,
   title,

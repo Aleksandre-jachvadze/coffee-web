@@ -18,7 +18,6 @@ export default function BenefitsSection() {
       text: "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.",
     },
   ];
-
   return (
     <section className="margin-item flex flex-col items-center pt-[120px] xl:pt-[200px] max-w-[1280px] mx-auto">
       {/* Title and Description */}
